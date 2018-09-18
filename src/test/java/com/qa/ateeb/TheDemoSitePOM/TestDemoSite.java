@@ -41,8 +41,8 @@ public class TestDemoSite {
 		loginUserPage.writePassFieldLogin();
 		loginUserPage.clickTestLogin();
 		
-		assertTrue("Login Unsuccessful!", loginUserPage.checkSuccessfulLogin());
-		assertEquals("Login Unsuccessful!", "**Successful Login**", loginUserPage.checkSuccessfulLoginString());
+		assertTrue("Login Unsuccessful! (assertTrue)", loginUserPage.checkSuccessfulLogin());
+		assertEquals("Login Unsuccessful! (assertEquals)", "**Successful Login**", loginUserPage.checkSuccessfulLoginString());
 		
 		//Thread.sleep(1000);
 		//WebElement checkElement = driver.findElement(By.xpath("//*[@id=\"b_context\"]/li[1]/div/div[1]/h2"));
